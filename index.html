@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz – Lineare Listen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <p class="kicker">Q1.4.1 · Höhere Datenstrukturen</p>
+        <h1>Lineare Listen</h1>
+        <p class="subtitle">Kurzquiz · 15 Fragen · 15 Punkte</p>
+      </div>
+      <div class="score-badge" id="progressBadge">0 / 15 beantwortet</div>
+    </header>
+
+    <section id="intro" class="card intro">
+      <h2>Bereit?</h2>
+      <p>Zu jeder Frage gibt es genau eine richtige Antwort. Bearbeite alle 15 Fragen und werte das Quiz anschließend aus.</p>
+      <p><strong>Maximal erreichbar: 15 Punkte.</strong></p>
+      <button id="startBtn" class="primary">Quiz starten</button>
+    </section>
+
+    <form id="quizForm" class="hidden"></form>
+
+    <section id="actions" class="actions hidden">
+      <p id="missingMessage" class="missing"></p>
+      <button id="submitBtn" type="button" class="primary">Quiz auswerten</button>
+    </section>
+
+    <section id="result" class="card result hidden" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
